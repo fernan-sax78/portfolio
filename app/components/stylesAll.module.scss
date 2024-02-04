@@ -1,0 +1,81 @@
+
+
+.animationOne{
+ animation: animationOne 1s forwards;
+ transform: translateY(0%);
+}
+
+@keyframes animationOne {
+    0%{opacity: 0; transform: translateY(50%);}
+    100%{ opacity: 1;
+    }
+}
+
+.animationTwo{
+ animation: animationTwo 1s forwards;
+ transform: translateX(0%);
+}
+
+@keyframes animationTwo {
+    0%{opacity: 0; transform: translateX(-30%);}
+    100%{ opacity: 1;
+    }
+}
+
+.animationThree{
+ animation: animationThree 1s forwards;
+ transform: scale(.5);
+}
+
+@keyframes animationThree {
+    0%{opacity: 0; }
+    100%{ transform : scale(1) ;}
+}
+
+.message{
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap : .625rem;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    /* width: 100dvw; */
+     @media (max-width: 56rem) and (max-height: 25.875rem){
+        height: auto !important;
+        margin-bottom: 1.625rem;
+     }
+  
+  .messageTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: .625rem;
+    border: none;
+    flex-direction: column;
+    > h1{
+    font-size: clamp(1rem, 0.7153rem + 2.6368vw, 1.4rem);
+    color: #f0ad4e;
+}
+  }
+
+  > div {
+    width: 60%;
+    margin: 0 auto;
+    padding: .9375rem;
+    @media (max-width : 57.5rem) {
+        width: 100%;
+        text-align: center;
+    }
+     @media (max-width: 57.5rem) and (max-height: 56rem){
+        height: auto !important;
+     }
+    > h1{
+        font-size: clamp(1rem, 0.7153rem + 2.6368vw, 2rem);
+    }
+  }
+}
+
+
