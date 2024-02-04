@@ -71,7 +71,7 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
 
         </p>
 
-          <Link href="">
+          <Link href="https://apps.apple.com/us/app/expo-go/id982107779">
             <Image className = "ml-2 mr-2 inline" src = "/images/android_store.png" alt="Download App" width={100} height={100}/>
           </Link> 
           <Link href="https://play.google.com/store/apps/details?id=host.exp.exponent&hl=it&gl=US">

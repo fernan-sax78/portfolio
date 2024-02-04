@@ -5,6 +5,7 @@ import { useState  } from 'react';
 import Image from "next/image";
 import TypeWriter from "./TypeWriter";
 import { useInView } from "react-intersection-observer";
+import { DownloadPDF } from '../function/downloadPDF';
 import styles from './stylesAll.module.scss';
 
 
@@ -41,9 +42,11 @@ const [modal, setModal] = useState(false);
 
 const { ref : myRef , inView : myElementisVisible } = useInView();
 
-
+const URL_PDF = '/pdf/Version_Eng-CV-titodev.pdf';
 
 const stateModal = () => setModal((prevState) => !prevState);
+
+
 
  
 
@@ -74,7 +77,12 @@ const stateModal = () => setModal((prevState) => !prevState);
 
         <div className = "mb-5 lg:mb-0">
             <button className = "px-6 py-3  w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black" onClick = {stateModal}>Give me a Chance</button>
-            <button className = "px-6 py-3  max-[667px]:w-[185px] rounded-full mr-4  bg-transparent hover:bg-slate-800 text-white border border-white mt-3">Download CV</button>
+            <button 
+            className = "px-6 py-3  max-[667px]:w-[185px] rounded-full mr-4  bg-transparent hover:bg-slate-800 text-white border border-white mt-3"
+            onClick={() => {
+              DownloadPDF(URL_PDF);
+            }}
+            >Download CV</button>
         </div>
 </div>         
              
