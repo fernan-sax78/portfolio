@@ -1,7 +1,7 @@
 
 
 
-function EmailTemplates(props) {
+export function EmailTemplates(props) {
     const { personName , personEmail , personSubject , personMessage } = props;
     
   return (

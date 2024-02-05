@@ -13,7 +13,7 @@ const projectsData = [
     image: "/images/projects/api-celebrities.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/fernan-sax78/api_celebrities.git",
-    previewUrl: "https://api-celebrities-gneqx83rc-fernandos-projects-4547a891.vercel.app/",
+    previewUrl: "https://titodev-celebrities.vercel.app/",
     name : '',
   },
   {
@@ -39,7 +39,7 @@ const projectsData = [
   {
     id: 4,
     title: "Chat Application",
-    description: "React-Native Project",
+    description: "React-Native and MongoDB",
     image: "/images/photos_chatapp/1.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/fernan-sax78/client.git",
