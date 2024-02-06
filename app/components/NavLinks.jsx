@@ -1,8 +1,6 @@
 
 "use client";
 
-import Link from "next/link";
-
 
 function NavLinks({href , title  }) {
   return (

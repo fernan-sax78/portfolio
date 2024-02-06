@@ -8,7 +8,10 @@ function TypeWriter({children , author}) {
 
          const encouragementText = document.getElementById('myText');
          let index = 0;
-         const text = ` "It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams..."- ${author} -` ;
+         const text = ` 
+         "It is not true that people stop pursuing 
+         dreams because they grow old, they grow old because they stop pursuing dreams...
+         "- ${author} -` ;
          
          
          const typingText = () => {
@@ -31,7 +34,7 @@ function TypeWriter({children , author}) {
     }   
 
     
-     return () => {typingText(); }
+     return () => typingText()
 
 
     }, [])
