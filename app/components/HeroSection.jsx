@@ -4,12 +4,12 @@ import Modal from "./Modal";
 import { useState  } from 'react';
 import Image from "next/image";
 import TypeWriter from "./TypeWriter";
-import { useInView } from "react-intersection-observer";
+//import { useInView } from "react-intersection-observer";
 import { DownloadPDF } from '../function/downloadPDF';
-import styles from './stylesAll.module.scss';
 
 
-  const author = 'Gabriel Garcia Marquez';
+
+  //const author = 'Gabriel Garcia Marquez';
   const divImage = [
     'before:absolute',
     'before:top-4',
@@ -40,7 +40,7 @@ function HeroSection() {
 const [modal, setModal] = useState(false);
 
 
-const { ref : myRef , inView : myElementisVisible } = useInView();
+//const { ref : myRef , inView : myElementisVisible } = useInView();
 
 const URL_PDF = '/pdf/Version_Eng-CV-titodev.pdf';
 
@@ -71,8 +71,10 @@ const stateModal = () => setModal((prevState) => !prevState);
 
       <h1 className = "text-white mb-3 max-[375px]:text-2xl  text-4xl lg:text-6xl sm:text-3xl font-extrabold ">Hello every one, I'm Fernando</h1>
 
-        <TypeWriter author = {author}>
-          <p className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText"></p>
+        <TypeWriter>
+          <p className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText">
+            {/* text here of typewriting */}
+          </p>
         </TypeWriter>
 
         <div className = "mb-5 lg:mb-0">
