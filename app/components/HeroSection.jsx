@@ -3,7 +3,7 @@
 import Modal from "./Modal";
 import { useState  } from 'react';
 import Image from "next/image";
-import { TypeWriter } from "./TypeWriter";
+import TypeWriter from "./TypeWriter";
 //import { useInView } from "react-intersection-observer";
 import { DownloadPDF } from '../function/downloadPDF';
 
@@ -74,7 +74,7 @@ const stateModal = () => setModal((prevState) => !prevState);
         
           <div className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText">
             {/* text here of typewriting */}
-            {TypeWriter(text)}
+            <TypeWriter text = {text}/>
           </div>
       
 

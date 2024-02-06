@@ -54,10 +54,10 @@ function EmailSection() {
             any quetion or just for a greeting.... and will response your messagge as fast i can.
         </p>
         <div className = "socials flex flex-row gap-2">
-            <Link href = "github.com">
+            <Link href = "https://github.com">
             <Image src = {GithubIcon} alt = "GitHub Icon" className = "w-12 contrast-0"/>
             </Link>
-            <Link href = "linkedin.com">
+            <Link href = "https://linkedin.com">
             <Image src = {LinkedinIcon} alt = "Linkedin Icon" className = "w-12 contrast-0"/>
             </Link>           
         </div>

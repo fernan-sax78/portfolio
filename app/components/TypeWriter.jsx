@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
+import dynamic from 'next/dynamic';
 
-export function TypeWriter( text ) {
+  function TypeWriter({ text }) {
     
     
 
-    useEffect(() => {
+ dynamic(useEffect(() => {
 
          const encouragementText = document.getElementById('myText');
          let index = 0;
@@ -35,14 +36,14 @@ export function TypeWriter( text ) {
      return () => typingText();
 
 
-    }, [])
+    }, []))
 
    
   // return (
-  //   <div>
-  //   {children}
-  //   </div>
+  //   <>
+    
+  //   </>
   // )
 }
 
-// export default TypeWriter
+ export default TypeWriter;
