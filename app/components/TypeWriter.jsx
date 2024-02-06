@@ -9,7 +9,6 @@ import { useEffect } from 'react';
         //  const encouragementText = document.getElementById('myText');
          const encouragementText = reference.current;
          let index = 0;
-         console.log(encouragementText);
          
          const typingText = () => {
          if (index < text.length) {
