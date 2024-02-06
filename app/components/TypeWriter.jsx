@@ -39,9 +39,9 @@ function TypeWriter({children , text}) {
 
    
   return (
-    <>
+    <div>
     {children}
-    </>
+    </div>
   )
 }
 
