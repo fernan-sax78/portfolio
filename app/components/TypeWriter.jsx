@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function TypeWriter({children}) {
+function TypeWriter({children , text}) {
     
     
 
@@ -8,7 +8,7 @@ function TypeWriter({children}) {
 
          const encouragementText = document.getElementById('myText');
          let index = 0;
-         const text = `It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams... "- Gabriel Garcia Marquez -"`;
+         
          
          
          const typingText = () => {
@@ -39,9 +39,9 @@ function TypeWriter({children}) {
 
    
   return (
-    <span>
+    <>
     {children}
-    </span>
+    </>
   )
 }
 

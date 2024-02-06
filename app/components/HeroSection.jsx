@@ -9,7 +9,7 @@ import { DownloadPDF } from '../function/downloadPDF';
 
 
 
-  //const author = 'Gabriel Garcia Marquez';
+  const text = `It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams... "- Gabriel Garcia Marquez -"`;
   const divImage = [
     'before:absolute',
     'before:top-4',
@@ -71,7 +71,7 @@ const stateModal = () => setModal((prevState) => !prevState);
 
       <h1 className = "text-white mb-3 max-[375px]:text-2xl  text-4xl lg:text-6xl sm:text-3xl font-extrabold ">Hello every one, I'm Fernando</h1>
 
-        <TypeWriter>
+        <TypeWriter text={text}>
           <p className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText">
             {/* text here of typewriting */}
           </p>
