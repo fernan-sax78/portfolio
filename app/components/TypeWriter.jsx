@@ -14,7 +14,7 @@ function TypeWriter({children , text}) {
          const typingText = () => {
          if (index < text.length) {
            if (index === 121) {
-            encouragementText.innerHTML += `</br> ${text.charAt(index)} `;
+            encouragementText.innerHTML += `</br> ${text.charAt(index)} `; 
            }
             else if (index === 125 ) {
               encouragementText.innerHTML += `<span style = "color : #d9534f; font-size : 1.4rem !important; font-weight : bold">${text.charAt(index)}</span>`;
