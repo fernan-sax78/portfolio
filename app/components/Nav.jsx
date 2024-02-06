@@ -10,15 +10,15 @@ import MenuOverlay from "./MenuOverlay";
 const navLink = [
     {
         title : "About",
-        path : "#about",
+        path : "about",
     },
         {
         title : "Projects",
-        path : "#projects"
+        path : "projects"
     },
         {
         title : "Contact",
-        path : "#contact"
+        path : "contact"
     },
 ]
 
@@ -55,7 +55,7 @@ const navLink = [
                    {
                     navLink.map(( link , index ) => (
                         <li key = {index} >
-                             <NavLinks href={link.path} title={link.title} />
+                             <NavLinks href={`#${link.path}`} title={link.title} />
                         </li>
                     )) 
                    }

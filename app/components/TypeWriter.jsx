@@ -38,9 +38,9 @@ function TypeWriter({children , author}) {
 
    
   return (
-    <>
+    <span>
     {children}
-    </>
+    </span>
   )
 }
 
