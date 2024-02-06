@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function TypeWriter(text) {
+export function TypeWriter( text ) {
     
     
 
@@ -32,7 +32,7 @@ function TypeWriter(text) {
     }   
 
     
-     return () => typingText()
+     return () => typingText();
 
 
     }, [])
@@ -45,4 +45,4 @@ function TypeWriter(text) {
   // )
 }
 
-export default TypeWriter
+// export default TypeWriter

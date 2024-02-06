@@ -3,7 +3,7 @@
 import Modal from "./Modal";
 import { useState  } from 'react';
 import Image from "next/image";
-import TypeWriter from "./TypeWriter";
+import { TypeWriter } from "./TypeWriter";
 //import { useInView } from "react-intersection-observer";
 import { DownloadPDF } from '../function/downloadPDF';
 
