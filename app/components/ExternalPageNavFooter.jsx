@@ -43,7 +43,7 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
 
     <div className= ' container lg:mx-auto md:mx-auto  ' > 
       
-      <h1 className = " font-mono text-white mb-6 max-[375px]:text-2xl text-center text-4xl lg:text-6xl sm:text-3xl font-extrabold mt-5">
+      <h1 className = " font-sans text-white mb-6 max-[375px]:text-2xl text-center text-4xl lg:text-6xl sm:text-3xl  mt-5">
         {title}
       </h1>
     {children}
