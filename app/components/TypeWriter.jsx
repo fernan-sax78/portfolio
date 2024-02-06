@@ -1,15 +1,14 @@
 import { useEffect } from 'react';
-import dynamic from 'next/dynamic';
 
-  function TypeWriter({ text }) {
+  function TypeWriter({ text  , reference }) {
     
     
 
- dynamic(useEffect(() => {
+    useEffect(() => {
 
-         const encouragementText = document.getElementById('myText');
+        //  const encouragementText = document.getElementById('myText');
+         const encouragementText = reference.current;
          let index = 0;
-         
          
          
          const typingText = () => {
@@ -36,7 +35,7 @@ import dynamic from 'next/dynamic';
      return () => typingText();
 
 
-    }, []))
+    }, [])
 
    
   // return (
