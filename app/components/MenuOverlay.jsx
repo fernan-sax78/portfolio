@@ -1,4 +1,4 @@
-
+"use client";
 
 import NavLinks from "./NavLinks"
 
@@ -10,7 +10,7 @@ function MenuOverlay({links}) {
       {links.map((link , index ) => (
             
             <li key = {index}>
-                <NavLinks href={link.path} title={link.title} />
+                <NavLinks href={`#${link.path}`} title={link.title} />
             </li>
 
             
