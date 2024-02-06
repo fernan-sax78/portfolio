@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-function TypeWriter({children , text}) {
+function TypeWriter(text) {
     
     
 
@@ -38,11 +38,11 @@ function TypeWriter({children , text}) {
     }, [])
 
    
-  return (
-    <div>
-    {children}
-    </div>
-  )
+  // return (
+  //   <div>
+  //   {children}
+  //   </div>
+  // )
 }
 
 export default TypeWriter

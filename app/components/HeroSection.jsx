@@ -71,11 +71,12 @@ const stateModal = () => setModal((prevState) => !prevState);
 
       <h1 className = "text-white mb-3 max-[375px]:text-2xl  text-4xl lg:text-6xl sm:text-3xl font-extrabold ">Hello every one, I'm Fernando</h1>
 
-        <TypeWriter text={text}>
-          <p className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText">
+        
+          <div className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" id = "myText">
             {/* text here of typewriting */}
-          </p>
-        </TypeWriter>
+            {TypeWriter(text)}
+          </div>
+      
 
         <div className = "mb-5 lg:mb-0">
             <button className = "px-6 py-3  w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black" onClick = {stateModal}>Give me a Chance</button>
