@@ -77,9 +77,9 @@ function AboutSection() {
         <div className = "max-[768px]:mt-3 lg:mt-0 text-left flex flex-col h-full">
             <h2 className = "text-4xl font-bold text-white mb-4">About Me</h2>
             <p className = "text-base lg:text-lg">
-                Here you can find some information about what i do,
-                if you are interesting in me, i remember you to download my CV or write me in Contact module,
-                and hire me .... don't will be a bad choice. Thanks a lot.
+                Here you can find some information about what I do,
+                if you are interested in me, i encourage you to download my CV or write to me in Contact module, 
+                .... I promise you wont regret it. Thanks a lot!.
             </p>
             <div className = "flex flex-row mt-8">
                 <TabButton 

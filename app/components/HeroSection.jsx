@@ -69,7 +69,7 @@ const stateModal = () => setModal((prevState) => !prevState);
 <div className="col-span-7 place-self-center text-center sm:text-left max-[768px]:mt-12">
 
 
-      <h1 className = "text-white mb-3 max-[375px]:text-2xl  text-4xl lg:text-6xl sm:text-3xl font-extrabold ">Hello every one, I'm Fernando</h1>
+      <h1 className = "text-white mb-3 max-[375px]:text-2xl  text-4xl lg:text-6xl sm:text-3xl font-extrabold ">Hello everyone, I'm Fernando</h1>
 
         
           <div className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" ref={typewriter}>
