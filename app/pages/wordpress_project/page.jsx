@@ -1,7 +1,10 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import { HomeIcon } from '@heroicons/react/24/outline';
 import styles from '/app/components/stylesAll.module.scss';
 import Image from 'next/image';
-import Link from 'next/link';
+//import Link from 'next/link';
 import ExternalPageNavFooter from '../../components/ExternalPageNavFooter';
 
 const otherStyles = [
@@ -25,6 +28,7 @@ const otherStyles = [
 ]
 
 function Message() {
+  const router = useRouter();
   return (
 <ExternalPageNavFooter wordpress={true}>
     <section className = {styles.message}>
@@ -39,10 +43,10 @@ function Message() {
         If this kind of work like it, contact me and i personalizate all kind of 
         Wordpress work for you . Thanks for read this message.</h1>
       </div>
-      <Link  href = "/" className = {otherStyles.join(' ').toString()}>
+      <button onClick={() => router.push('/#projects')} className = {otherStyles.join(' ').toString()}>
         <HomeIcon className = 'w-8'/>
-           Return to Portfolio 
-      </Link>
+           Return to Projects 
+      </button>
     </section>
 </ExternalPageNavFooter>
   )
