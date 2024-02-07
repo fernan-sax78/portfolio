@@ -23,7 +23,7 @@ export function typewriterFunction( text , reference) {
             encouragementText.innerHTML +=  text.charAt(index) ;
            }
            index ++;
-          setTimeout(typingText , 180);
+          setTimeout(typingText , 80);
         }
        
     }   
