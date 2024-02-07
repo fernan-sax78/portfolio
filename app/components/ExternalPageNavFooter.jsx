@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from 'next/navigation';
 import Footer from './Footer';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -30,6 +33,10 @@ const otherStyles = [
 ];
 
 function ExternalPageNavFooter({children , title , linkGitHub , state , wordpress}) {
+
+  const router = useRouter();
+
+  
 
   return (
     <div>
@@ -78,9 +85,9 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
             <Image className = "ml-2 mr-0 inline"  src = "/images/app_store.png" alt="Download App" width={100} height={100}/>
           </Link>
 
-      <Link  href = "/" className = {otherStyles.join(' ').toString()} style={{margin : '1.25rem auto .3125rem auto'}}>
+      <Link  href = "" onClick = {() => router.back()} className = {otherStyles.join(' ').toString()} style={{margin : '1.25rem auto .3125rem auto', width : "max-content"}}>
         <HomeIcon className = 'w-8'/>
-           Return to Portfolio 
+           Return to Project Section 
       </Link>
       </div>      
      ): null}

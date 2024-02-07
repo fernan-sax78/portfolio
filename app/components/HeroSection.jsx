@@ -60,7 +60,7 @@ useEffect(() => {
  
 
   return (
-    <section className = "flex flex-col min-h-screen justify-center ">
+    <section className = "flex flex-col min-h-screen justify-center " id="hero">
    
      {modal && <Modal stateModal = {modal} >
               
