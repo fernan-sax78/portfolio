@@ -35,7 +35,7 @@ const otherStyles = [
 function ExternalPageNavFooter({children , title , linkGitHub , state , wordpress}) {
 
   const router = useRouter();
-
+  const path = { name : 'projects'}
   
 
   return (
@@ -85,7 +85,7 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
             <Image className = "ml-2 mr-0 inline"  src = "/images/app_store.png" alt="Download App" width={100} height={100}/>
           </Link>
 
-      <button  onClick = {() => router.push('/pages/wordpress_project')} className = {otherStyles.join(' ').toString()} style={{margin : '1.25rem auto .3125rem auto', width : "max-content"}}>
+      <button  onClick = {() => router.push(`/#${path.name}`)} className = {otherStyles.join(' ').toString()} style={{margin : '1.25rem auto .3125rem auto', width : "max-content"}}>
         <HomeIcon className = 'w-8'/>
            Return to Projects 
       </button>

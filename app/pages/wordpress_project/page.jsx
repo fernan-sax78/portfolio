@@ -29,6 +29,7 @@ const otherStyles = [
 
 function Message() {
   const router = useRouter();
+  const path = { name : 'projects'}
   return (
 <ExternalPageNavFooter wordpress={true}>
     <section className = {styles.message}>
@@ -43,7 +44,7 @@ function Message() {
         If this kind of work like it, contact me and i personalizate all kind of 
         Wordpress work for you . Thanks for read this message.</h1>
       </div>
-      <button onClick={() => router.push('/#projects')} className = {otherStyles.join(' ').toString()}>
+      <button onClick={() => router.push(`/#${path.name}`)} className = {otherStyles.join(' ').toString()}>
         <HomeIcon className = 'w-8'/>
            Return to Projects 
       </button>
