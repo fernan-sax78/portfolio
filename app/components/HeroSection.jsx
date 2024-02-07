@@ -1,14 +1,15 @@
 "use client";
 
 import Modal from "./Modal";
-import { useState , useRef } from 'react';
+import { useState , useRef , useEffect} from 'react';
 import Image from "next/image";
-import TypeWriter from "./TypeWriter";
+//import TypeWriter from "./TypeWriter";
 //import { useInView } from "react-intersection-observer";
-import { DownloadPDF } from '../function/downloadPDF';
+import { DownloadPDF , typewriterFunction} from '../function';
 
 
-  
+
+
   const text = `It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams... "- Gabriel Garcia Marquez -"`;
   const divImage = [
     'before:absolute',
@@ -38,6 +39,7 @@ import { DownloadPDF } from '../function/downloadPDF';
 function HeroSection() {
 
 const [modal, setModal] = useState(false);
+const [typing, setTyping] = useState("")
 const typewriter = useRef();
 
 //const { ref : myRef , inView : myElementisVisible } = useInView();
@@ -46,6 +48,13 @@ const URL_PDF = '/pdf/Version_Eng-CV-titodev.pdf';
 
 const stateModal = () => setModal((prevState) => !prevState);
 
+useEffect(() => {
+
+ setTyping(typewriterFunction(text , typewriter.current));
+
+
+ 
+}, []);
 
 
  
@@ -74,7 +83,7 @@ const stateModal = () => setModal((prevState) => !prevState);
         
           <div className = "font-[Courier] text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl" ref={typewriter}>
             {/* text here of typewriting */}
-            <TypeWriter text = {text} reference={typewriter}/>
+            
           </div>
       
 

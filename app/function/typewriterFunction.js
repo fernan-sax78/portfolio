@@ -1,16 +1,11 @@
-"use client";
 
 
-import { useEffect } from 'react';
 
-  function TypeWriter({ text  , reference }) {
+export function typewriterFunction( text , reference) {
     
-    
-
-    useEffect(() => {
 
         //  const encouragementText = document.getElementById('myText');
-         const encouragementText = reference.current;
+         const encouragementText = reference ;
          let index = 0;
          
          const typingText = () => {
@@ -28,25 +23,13 @@ import { useEffect } from 'react';
             encouragementText.innerHTML +=  text.charAt(index) ;
            }
            index ++;
-          setTimeout(typingText , 80);
+          setTimeout(typingText , 180);
         }
        
     }   
 
     
-     return () => {
-      typingText();
-      };
+     typingText();
 
 
-    }, []);
-
-   
-  // return (
-  //   <>
-    
-  //   </>
-  // )
 }
-
- export default TypeWriter;
