@@ -20,7 +20,7 @@ export default function NotFoundPage() {
       <p className='text-white text-center'>{t('description')}</p>
       <Image src = "/not_found.png" width = {300} height ={300} alt='foto_not_found'/>
       <a href="/" className='w-[150px] bg-red-400 p-3 rounded-full text-white text-md'>{t('link')}</a>
-    </section> 
+    </section>
 
     <Footer />  
     </>
