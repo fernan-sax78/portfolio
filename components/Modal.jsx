@@ -60,12 +60,12 @@ function Modal(props) {
                   </div>
 
                       <div className="mt-2 w-100">
-                        <p className="text-md">
+                        <p className="text-md ">
                           {t('description')}
                         </p>
                       </div>                  
                 </div>
-                <div className="bg-[#fff] px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <div className="bg-[#fff] px-4 py-3 flex sm:flex-row-reverse sm:px-6 justify-center items-center">
                   {children}
                 </div>
               </Dialog.Panel>

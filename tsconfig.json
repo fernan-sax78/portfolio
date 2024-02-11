@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/not-found.jsx"  ],
+, "app/not-found.jsx", "components/HeroSection.jsx"  ],
   "exclude": [
     "node_modules"
   ]

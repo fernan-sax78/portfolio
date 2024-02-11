@@ -44,7 +44,8 @@ const [modal, setModal] = useState(false);
 const [typing, setTyping] = useState("")
 const typewriter = useRef();
 
-const text = `${t('sentence')}${t('author')}`
+const text = `${t('sentence')}${t('author')}`;
+
 
 //const { ref : myRef , inView : myElementisVisible } = useInView();
 
@@ -70,7 +71,7 @@ useEffect(() => {
               
        <button  
        onClick={stateModal}   
-       className = "px-6 py-3  rounded-full mr-4  text-white bg-purple-500 border-1 border-black mt-3  hover:-translate-y-0.5 hover:bg-purple-600">
+       className = "px-6 py-3 rounded-full mr-4  text-white bg-purple-500 border-1 border-black mt-3  hover:-translate-y-0.5 hover:bg-purple-600">
         {t_2('button')}
       </button>
                           
