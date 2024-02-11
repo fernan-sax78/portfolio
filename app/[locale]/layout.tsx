@@ -2,6 +2,7 @@ import './globals.css'
 //import { Inter } from 'next/font/google';
 import { useMessages , NextIntlClientProvider} from "next-intl";
 
+
 //const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -9,12 +10,12 @@ export const metadata = {
   description: 'Created to look for great opportunities in web development',
 }
 
-export default function LocaleLayout({ children , params }) {
+export default function LocaleLayout({ children , params : {locale} }) {
     const messages = useMessages();
   return (
-    <html lang= {params.locale}>
+    <html lang= {locale}>
       <body>
-        <NextIntlClientProvider  locale = {params.locale} messages={messages}>
+        <NextIntlClientProvider  locale = {locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
