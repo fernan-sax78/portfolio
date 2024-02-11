@@ -1,10 +1,26 @@
 
 
+.look{
+ animation: look 1s infinite;
+ transform: translateX(0%); 
+ transition: transform 2s;
+}
+
+@keyframes look{
+  0%{transform:translateX(20%);}
+  50%{transform:translateX(15%);}
+  100%{transform:translateX(20%);}
+}
+
+
+
 
 .animationOne{
  animation: animationOne 1s forwards;
  transform: translateY(0%);
 }
+
+
 
 @keyframes animationOne {
     0%{opacity: 0; transform: translateY(50%);}

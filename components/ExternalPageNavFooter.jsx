@@ -6,7 +6,8 @@ import Footer from './Footer';
 import Link from 'next/link';
 import Image from 'next/image';
 import GithubIcon from '/public/github-icon.svg';
-import { HomeIcon } from '@heroicons/react/24/outline';
+import { HomeIcon , ServerIcon} from '@heroicons/react/24/outline';
+import styles from './stylesAll.module.scss';
 
 
 
@@ -58,33 +59,34 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
     {children}
      {!wordpress ? (
       <div className='container lg:w-[50rem] mx-auto my-5 '>
-      <p className='text-white text-base lg:text-lg p-5 mt-10'>
+      <p className='text-white text-base lg:text-lg p-3 mt-10 text-center'>
          {/* first text of sentence*/} 
          {t('description_part_one')}
         <Image className = "w-5 contrast-0 ml-2 mr-2 inline" src= '/images/expo.png' width={100} height={100} alt='expo'/>
         {/* second text sentence*/}
          {t('description_part_two')}
         . { state ? (
-          <span>
-             Here is my server code in
+          <span className='underline'>
+             {t('available')}
             <Image src = {GithubIcon} alt = "GitHub Icon" className = "w-5 contrast-0 ml-2 mr-2 inline"/>
-            (
+          
             <Link href ={linkGitHub}  target='_blank' className='hover:text-blue-500'> 
-             server  
+            <ServerIcon width={20} height={20} style={{display : 'inherit'}} className= { styles.look}/>
             </Link>
-            )
          </span> 
 
         ) : null }
-
         </p>
 
+
+         <div className='flex justify-center items-center'>
           <Link href="https://apps.apple.com/us/app/expo-go/id982107779">
             <Image className = "ml-2 mr-2 inline" src = "/images/android_store.png" alt="Download App" width={100} height={100}/>
           </Link> 
           <Link href="https://play.google.com/store/apps/details?id=host.exp.exponent&hl=it&gl=US">
             <Image className = "ml-2 mr-0 inline"  src = "/images/app_store.png" alt="Download App" width={100} height={100}/>
-          </Link>
+          </Link>          
+         </div>
 
       <button  onClick = {() => router.back()} className = {otherStyles.join(' ').toString()} style={{margin : '1.25rem auto .3125rem auto', width : "max-content"}}>
         <HomeIcon className = 'w-8'/>

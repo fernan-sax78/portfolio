@@ -60,6 +60,7 @@
     "title_todo" : "'Cose da fare' con react-native",    
     "description_part_one" : "Puoi provare la mia app di chat scaricando gli strumenti giusti come Xcode e Android Studio ed eseguire una prova",
     "description_part_two" : ", anche installandolo in un dispositivo fisico da Google Play o App Store nei link sottostanti",
+    "available" : "Qui trovi il codice del server in ",
     "link" : "Ritorna ai Progetti"
   },
   "Wordpress" : {
