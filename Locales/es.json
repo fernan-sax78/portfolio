@@ -1,0 +1,70 @@
+{
+"HeroSection" : {
+    "title" : "Hola a todos, soy Fernando",
+    "sentence" : "No es cierto que la gente deja de perseguir sueños porque envejece, se hace vieja porque deja de perseguir sueños...",
+    "author" : "Gabriel Garcia Marquez",
+    "button_one" : "Haz Click Aqui",
+    "button_two" : "Descarga mi CV",
+    "download_file" : "Version_Es-CV-titodev"
+},
+"NavBar" : {
+  "about" : "Quien Soy",
+  "projects" : "Proyectos",
+  "contact" : "Contacto"
+} ,
+"Modal" : {
+   "title" : "HOLA NECESITO TU ATENCIÓN POR UNOS MINUTOS...",
+   "description" : "Este es mi Portfolio con el propósito de mostrarte cómo trabajo, échale un vistazo y dame una oportunidad... No olvides descargar mi CV. Gracias.",
+   "button" : "Regresa al Portfolio"
+},
+"AboutSection" : {
+     "title" : "Quien Soy",
+     "description" : "Aquí podrás encontrar información sobre lo que hago, si estás interesado en mí te animo a descargar mi CV o escribirme en el formulario de Contacto,.... Te prometo que no te arrepentirás. ¡Muchas gracias!.",
+      "tab" : "{tab, select , Skills {Abilidades} Education {Educacion} other {Experiencias}}"
+},
+"MyProjects" : {
+    "title" : "Mis Proyectos"
+},
+"EmailSection" : {
+     "title" : "Contactame",
+     "description" : "Este es el espacio para comunicarte conmigo, actualmente busco nuevas oportunidades y nuevas experiencias en programación desarrollo web. Estaré esperando cualquier pregunta o simplemente un saludo... y responderé a tu mensaje lo más rápido que pueda.",
+     "name" : "Tu Nombre",
+     "email" : "Tu Email",
+     "subject" : "Asunto del Mensaje",
+     "message" : "Mensaje",
+     "placeholder" : {
+      "name" : "tu nombre por favor",
+      "email" : "escrive aqui tu email",
+      "subject" : "escriba aquí el sujeto del mensaje",
+      "message" : "escriba aquí el mensaje"
+     },
+     "link" : "Envia Tu Mensaje",
+     "status" : "El correo electrónico fue enviado Exitosamente"
+},
+"Projects" : {
+    "title" : "Mis Proyectos"
+},
+  "LocaleSwitcher": {
+    "label": "Cambia Idioma",
+    "locale": "{locale, select, en {🇺🇸 Ingles} es {🇪🇸 Español} other {🇮🇹 Italiano}}"
+  },
+  "NotFoundPage": {
+    "title": "Pagina Inexistente",
+    "description": "Vuelva a verificar la barra de direcciones del navegador o utilice la navegación para ir a una página conocida.",
+    "link" : "Regresa a Home"
+  },
+  "ExternalPage" : {
+    "title_chat" : "Aplicacion de Chat con react-native",
+    "title_weather" : "El Meteo con react-native",
+    "title_todo" : "Lista de tareas con react-native",    
+    "description_part_one" : "Puedes probar mi aplicación de chat descargando las herramientas adecuadas como Xcode y Android Studio y probándolas con",
+    "description_part_two" : ", incluso instalándolo en un dispositivo físico desde Google Play o App Store en los enlaces a continuación",
+    "link" : "Regresa a Proyectos"
+  },
+  "Wordpress" : {
+    "title" : "ESTO ES UN PROYECTO WORDPRESS",
+    "description" : "Lo siento no poder mostrar el código de este proyecto, te invitamos a visitar el sitio web y echar un vistazo. Si te gusta este tipo de trabajo, contáctame y personalizo todo tipo de trabajos en Wordpress para ti. Gracias por leer este mensaje.",
+    "link" : "Regresa a los Proyectos"
+  }
+
+}

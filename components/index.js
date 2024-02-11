@@ -1,0 +1,1 @@
+export * from '../[locale]/components/email-template.jsx';

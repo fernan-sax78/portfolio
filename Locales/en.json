@@ -1,0 +1,70 @@
+{
+"HeroSection" : {
+    "title" : "Hello everyone , i'm Fernando",
+    "sentence" : "It is not true that people stop pursuing dreams because they grow old, they grow old because they stop pursuing dreams...",
+    "author" : "Gabriel Garcia Marquez",
+    "button_one" : "Take a Look",
+    "button_two" : "Download my CV",
+    "download_file" : "Version_Eng-CV-titodev"
+},
+"NavBar" : {
+  "about" : "About",
+  "projects" : "Projects",
+  "contact" : "Contact"
+} ,
+"Modal" : {
+   "title" : "HI, I NEED YOUR ATTENTION A FEW MINUTES...",
+   "description" : "This is my Portfolio with the purpose to show you how i work, take a look inside and give me a chance... Don't forgot download my CV. Thanks.",
+   "button" : "Return to my Portfolio"
+},
+"AboutSection" : {
+     "title" : "About Me",
+     "description" : "Here you can find some information about what I do, if you are interested in me, i encourage you to download my CV or write to me in Contact module, .... I promise you wont regret it. Thanks a lot!.",
+     "tab" : "{tab, select , Skills {Skills} Education {Education} other {Experiences}}"
+},
+"MyProjects" : {
+    "title" : "My Projects"
+},
+"EmailSection" : {
+     "title" : "Contact Me",
+     "description" : "This is the space for comunicate with me, i currently looking for new oportunities and new experiences in programming web develop. I'll waiting for any quetion or just for a greeting.... and will response your messagge as fast i can.",
+     "name" : "Your Name",
+     "email" : "Email",
+     "subject" : "Subject of Message",
+     "message" : "Message",
+     "placeholder" : {
+      "name" : "your name please",
+      "email" : "type here your email",
+      "subject" : "type here your subject",
+      "message" : "type here your message"
+     },
+     "link" : "Send Your Message",
+     "status" : "Email was Sent Successfully"
+},
+"Projects" : {
+    "title" : "My Projects"
+},
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇺🇸 English} es {🇪🇸 Spanish} other {🇮🇹 Italian}}"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "link" : "Return Home"
+  },
+  "ExternalPage" : {
+    "title_chat" : "Chat App with react-native",
+    "title_weather" : "Weather App with react-native",
+    "title_todo" : "A Todo App with react-native",
+    "description_part_one" : "You can try my chat app by downloading the right tools like Xcode and Android Studio and test with",
+    "description_part_two" : ", even by installing it in a physical device like Googe Play or App Store in links bellow",
+    "link" : "Return to Projects"
+  },
+  "Wordpress" : {
+    "title" : "THIS IS A WORDPRESS PROJECT",
+    "description" : "I apologize that I cannot show the code for this project, we invite you and visit the website and take a look. If this kind of work like it, contact me and i personalizate all kind of Wordpress work for you . Thanks for read this message.",
+    "link" : "Return to Projects"
+  }
+
+}
