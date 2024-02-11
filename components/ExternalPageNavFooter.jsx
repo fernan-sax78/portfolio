@@ -65,7 +65,7 @@ function ExternalPageNavFooter({children , title , linkGitHub , state , wordpres
         <Image className = "w-5 contrast-0 ml-2 mr-2 inline" src= '/images/expo.png' width={100} height={100} alt='expo'/>
         {/* second text sentence*/}
          {t('description_part_two')}
-        . { state ? (
+        . <br />{ state ? (
           <span className='underline'>
              {t('available')}
             <Image src = {GithubIcon} alt = "GitHub Icon" className = "w-5 contrast-0 ml-2 mr-2 inline"/>

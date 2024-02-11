@@ -54,7 +54,7 @@
     "link" : "Regresa a Home"
   },
   "ExternalPage" : {
-    "title_chat" : "Aplicacion de Chat con react-native",
+    "title_chat" : "Aplicaciòn de Chat con react-native",
     "title_weather" : "El Meteo con react-native",
     "title_todo" : "Lista de tareas con react-native",    
     "description_part_one" : "Puedes probar mi aplicación de chat descargando las herramientas adecuadas como Xcode y Android Studio y probándolas con",
