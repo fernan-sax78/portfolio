@@ -57,7 +57,7 @@
     "title_chat" : "Aplicaciòn de Chat con react-native",
     "title_weather" : "El Meteo con react-native",
     "title_todo" : "Lista de tareas con react-native",    
-    "description_part_one" : "Puedes probar mi aplicación de chat descargando las herramientas adecuadas como Xcode y Android Studio y probándolas con",
+    "description_part_one" : "Puedes probar mi aplicación descargando las herramientas adecuadas como Xcode y Android Studio y probándolas con",
     "description_part_two" : ", incluso instalándolo en un dispositivo físico desde Google Play o App Store en los enlaces a continuación",
     "available" : "Aqui esta el codigo del server en ",
     "link" : "Regresa a Proyectos"
