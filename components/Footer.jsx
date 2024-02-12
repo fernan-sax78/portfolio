@@ -13,9 +13,10 @@ function Footer() {
         </span>
         <p className ="text-slate-600 lg:text-[18px] text-[12px]">
           © All rights reserved from 
-          <span className = "text-[#f2f2f2]">
+          <span className = "text-[#f2f2f2] mx-2">
             {begin}
-          </span> untill now <span className = "text-[#f2f2f2]">{today}</span></p>
+          </span>untill now 
+          <span className = "text-[#f2f2f2] mx-2">{today}</span></p>
       </div>
     </footer>
   )
